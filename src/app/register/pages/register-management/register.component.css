@@ -1,24 +1,24 @@
 .form-container {
-  position: relative; /* Cambiado de 'absolute' a 'relative' */
+  position: relative; 
   max-width: 360px;
   top: 10%;
-  margin: auto; /* Centra el formulario horizontalmente */
+  margin: auto;
   padding: 20px;
   border: 1px solid #ccc;
   background-color: #ebe7f3;
 }
 
-/* Estilos para pantallas grandes */
+
 @media (min-width: 768px) {
   .form-container {
-    width: 50%; /* O el porcentaje que prefieras */
+    width: 50%;
   }
 }
 
-/* Estilos para pantallas pequeñas */
+
 @media (max-width: 767px) {
   .form-container {
-    width: 90%; /* O el porcentaje que prefieras */
+    width: 90%; 
     max-width: 300px;
   }
 }
@@ -64,8 +64,8 @@ button[type="submit"]:hover {
   background-color: darkmagenta;
 }
 button[type="submit"]:disabled {
-  background-color: #ccc; /* Este es el color gris para el botón deshabilitado */
-  color: #666; /* Puedes cambiar el color del texto si lo deseas */
+  background-color: #ccc; 
+  color: #666;
 }
 
 .error-message {
