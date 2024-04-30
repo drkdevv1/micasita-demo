@@ -4,7 +4,7 @@
       <span class="filter-option" (click)="filterEstates('Sale')">Comprar</span>
       <span class="filter-option" (click)="filterEstates('Rent')">Alquilar</span>
     </mat-card-actions>
-    <div class="line"></div> <!-- Línea separadora -->
+    <div class="line"></div>
     <div class="cards-wrapper">
       <mat-card *ngFor="let estate of filteredEstates" class="estate-card">
         <img mat-card-image [src]="estate.thumbnail" alt="Estate Image">
