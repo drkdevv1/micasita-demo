@@ -8,15 +8,15 @@
 .button-filter {
   display: flex;
   justify-content: space-around;
-  width: 200px; /* Ancho de los botones */
+  width: 200px;
   margin-top: 30px;
 }
 
 .filter-option {
   color: white;
   cursor: pointer;
-  font-size: 18px; /* Tamaño de fuente más grande */
-  margin-right: 100px; /* Espacio entre las palabras */
+  font-size: 18px; 
+  margin-right: 100px;
 }
 
 .line {
