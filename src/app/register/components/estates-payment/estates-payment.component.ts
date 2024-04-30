@@ -29,7 +29,6 @@ export class EstatesPaymentComponent {
     delete this.paymentData.id;
     this.paymentSubscription = this.registerService.create(this.paymentData).subscribe({
       next: (response) => {
-        // Usar MatSnackBar en lugar de alert
         this.snackBar.open('Metodo de Pago Correcto', 'Cerrar', {
           duration: 2000,
           horizontalPosition: 'center',
