@@ -23,14 +23,13 @@ export class RegisterComponent implements OnDestroy {
   constructor(
     private registerService: RegisterService,
     private router: Router,
-    private snackBar: MatSnackBar // Inyectar MatSnackBar para mostrar notificaciones
+    private snackBar: MatSnackBar
   ) {}
 
   submitForm(formData: any) {
     delete this.userData.id;
     this.registrationSubscription = this.registerService.create(this.userData).subscribe({
       next: (response) => {
-        // Usar MatSnackBar en lugar de alert
         this.snackBar.open('Usuario registrado exitosamente', 'Cerrar', {
           duration: 2000,
           horizontalPosition: 'center',
@@ -39,7 +38,6 @@ export class RegisterComponent implements OnDestroy {
         this.router.navigate(['/estates-list']);
       },
       error: (error) => {
-        // Usar MatSnackBar en lugar de alert
         this.snackBar.open('Error al registrar usuario: ' + error.message, 'Cerrar', {
           duration: 2000,
           horizontalPosition: 'center',
