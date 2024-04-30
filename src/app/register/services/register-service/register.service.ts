@@ -13,8 +13,6 @@ export class RegisterService extends BaseService<User> {
     super(http);
     this.resourceEndpoint = '/users';
   }
-
-  // Implementación concreta del método getAll
   getAll(): Observable<User[]> {
     return this.http.get<User[]>(this.resourcePath(), this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
