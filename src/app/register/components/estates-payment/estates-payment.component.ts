@@ -37,7 +37,6 @@ export class EstatesPaymentComponent {
         this.router.navigate(['/estates-list']);
       },
       error: (error) => {
-        // Usar MatSnackBar en lugar de alert
         this.snackBar.open('Error al implementar el Metodo de Pago: ' + error.message, 'Cerrar', {
           duration: 2000,
           horizontalPosition: 'center',
